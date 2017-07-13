@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    
+    <!--标题-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/view_size_50"-->
+        <!--android:background="@color/dodgerblue">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="左啊"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_time"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="2017年1月"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="右啊"/>-->
+    <!--</RelativeLayout>-->
+    <include layout="@layout/bar_title"/>
+
+
+    <!--自定义view-->
+    <!--<com.calendar.cus.cscalendar.mview.CalendarView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <!--</com.calendar.cus.cscalendar.mview.CalendarView>-->
+
+    <include layout="@layout/view_week"/>
+    <ScrollView
+        android:id="@+id/sv_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_test"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+            </android.support.v4.view.ViewPager>
+            <LinearLayout
+                android:id="@+id/ll_case_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--自定义view-->
+    <!--<com.calendar.cus.cscalendar.mview.CalendarView android:id="@+id/cv_calendar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--</com.calendar.cus.cscalendar.mview.CalendarView>-->
+
+    <!-- 星期view-->
+    <!--<include layout="@layout/view_week"/>-->
+    <!--日历view-->
+    <GridView
+        android:id="@+id/gv_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/view_size_10">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/font_size_10"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_15"
+        android:textColor="@color/coral"
+        android:text="提示"/>
+    <TextView
+        android:id="@+id/dialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/font_size_16"
+        android:text="内容"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_size_14">
+        <TextView
+            android:id="@+id/dialog_btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/view_size_10"
+            android:paddingRight="@dimen/view_size_10"
+            android:paddingTop="@dimen/view_size_4"
+            android:paddingBottom="@dimen/view_size_4"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/dialog_btn_left"
+            android:textSize="@dimen/font_size_15"
+            android:textColor="@color/white"
+            android:text="确定"/>
+        <TextView
+            android:id="@+id/dialog_btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/view_size_10"
+            android:paddingRight="@dimen/view_size_10"
+            android:paddingTop="@dimen/view_size_4"
+            android:paddingBottom="@dimen/view_size_4"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/dialog_btn_right"
+            android:textSize="@dimen/font_size_15"
+            android:textColor="@color/white"
+            android:text="取消"/>
+    </RelativeLayout>
+
+</LinearLayout>
